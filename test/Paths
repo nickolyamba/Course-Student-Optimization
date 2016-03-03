@@ -1,0 +1,16 @@
+unzip src.zip
+
+mkdir bin
+
+cd bin
+
+javac -d bin $(find ./src/* | grep .java)
+
+java edu.gatech.cs6310.projectOne.ProjectOne -i ../resources/small/student_demand_10.csv   - works
+
+java edu.gatech.cs6310.projectOne.ProjectOne -i /home/ubuntu/Desktop/Test/reso\ urces/medium/student_demand_600.csv
+
+java edu.gatech.cs6310.proj.ProjectOne -i ../resources/medium/student_demand_600.csv
+
+
+java edu.gatech.cs6310.pr.ProjectOne -i ../project1-datasets/demand1.csv
